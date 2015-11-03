@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+
+<config>
+    <modules>
+        <Twinsen_StorePickup>
+            <version>1.0.0</version>
+        </Twinsen_StorePickup>
+    </modules>
+    <global>
+        <models>
+            <storepickup>
+                <class>Twinsen_StorePickup_Model</class>
+            </storepickup>
+        </models>
+
+        <helpers>
+            <storepickup>
+                <class>Twinsen_StorePickup_Helper</class>
+            </storepickup>
+        </helpers>
+    </global>
+
+    <frontend>
+        <translate>
+            <modules>
+                <Twinsen_StorePickup>
+                    <files>
+                        <default>Twinsen_StorePickup.csv</default>
+                    </files>
+                </Twinsen_StorePickup>
+            </modules>
+        </translate>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Twinsen_StorePickup>
+                    <files>
+                        <default>Twinsen_StorePickup.csv</default>
+                    </files>
+                </Twinsen_StorePickup>
+            </modules>
+        </translate>
+    </adminhtml>
+
+
+    <default>
+        <!--
+        StorePickup Shipping Carrier
+    -->
+        <carriers>
+
+            <storepickup>
+                <active>1</active>
+                <model>storepickup/shipping_storePickup</model>
+                <carriertitle>Store Pickup</carriertitle>
+                <methodtitle>Store Pickup</methodtitle>
+                <description>Pick up in Store</description>
+                <price>0</price>
+            </storepickup>
+
+
+        </carriers>
+        <!--
+        StorePickup Payment Method
+    -->
+        <payment>
+            <storepickup>
+                <active>1</active>
+                <model>storepickup/payment_storePickup</model>
+                <order_status>processing</order_status>
+                <title>Store Pickup</title>
+            </storepickup>
+        </payment>
+    </default>
+
+
+</config>

@@ -1,0 +1,1 @@
+<?xml version="1.0"?><config>    <modules>        <Twinsen_StorePickup>            <active>true</active>            <codePool>community</codePool>            <depends>                <Mage_Shipping />            </depends>        </Twinsen_StorePickup>    </modules></config>
